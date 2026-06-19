@@ -1,12 +1,13 @@
 import { GithubLogo } from '@phosphor-icons/react/dist/ssr'
 import { Brand } from './brand'
+import { DOWNLOAD_URL } from '../lib/links'
 
 type Link = { label: string; href: string }
 const LINKS: { group: string; items: Link[] }[] = [
   {
     group: 'Product',
     items: [
-      { label: 'Desktop app', href: '/#download' },
+      { label: 'Desktop app', href: DOWNLOAD_URL },
       { label: 'CLI', href: '/docs/cli' },
       { label: 'JSON-RPC server', href: '/docs/rpc' },
     ],

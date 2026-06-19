@@ -1,5 +1,6 @@
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr'
 import { Reveal } from './reveal'
+import { DOWNLOAD_URL } from '../lib/links'
 
 export function CTA() {
   return (
@@ -29,7 +30,7 @@ export function CTA() {
         <Reveal delay={0.18}>
           <div className="mt-10 inline-flex flex-wrap items-center justify-center gap-5">
             <a
-              href="#download"
+              href={DOWNLOAD_URL}
               className="group inline-flex items-center gap-2 h-[50px] px-6 rounded-[10px] bg-accent text-ink font-medium text-[15px] hover:bg-[#6e92ff] transition-all active:translate-y-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
             >
               Download for macOS

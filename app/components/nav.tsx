@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { GithubLogo } from '@phosphor-icons/react/dist/ssr'
 import { Brand } from './brand'
 import { clsx } from './clsx'
+import { DOWNLOAD_URL } from '../lib/links'
 
 const PRIMARY = [
   { label: 'Sandbox', href: '/#sandbox' },
@@ -57,7 +58,7 @@ export function Nav() {
             <GithubLogo size={17} weight="regular" />
           </a>
           <a
-            href="#download"
+            href={DOWNLOAD_URL}
             className="inline-flex items-center gap-2 px-3.5 h-[34px] rounded-[8px] bg-fore text-ink font-mono text-[12.5px] hover:bg-accent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 active:translate-y-[1px]"
           >
             Download

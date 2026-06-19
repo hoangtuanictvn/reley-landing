@@ -1,6 +1,7 @@
 import { ArrowRight, BookOpen, Lightning, FileCode, CheckCircle } from '@phosphor-icons/react/dist/ssr'
 import { Reveal } from './reveal'
 import { HeroParticles } from './hero-particles'
+import { DOWNLOAD_URL } from '../lib/links'
 
 export function Hero() {
   return (
@@ -35,7 +36,7 @@ export function Hero() {
             <Reveal delay={0.18}>
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <a
-                  href="#download"
+                  href={DOWNLOAD_URL}
                   className="group inline-flex items-center gap-2 h-[46px] px-5 rounded-[10px] bg-accent text-ink font-medium text-[14.5px] hover:bg-[#6e92ff] transition-all active:translate-y-[1px] focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-ink shadow-[0_0_0_1px_rgba(93,131,255,0.5),0_18px_50px_-14px_rgba(93,131,255,0.55)]"
                 >
                   Download for macOS
