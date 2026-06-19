@@ -45,7 +45,7 @@ pnpm cli patch set vault.balance --session <sid> \\
       <P>
         Patch a Meteora DLMM pool admin to your local wallet. Relay decodes the
         account, sets <Mono>admin</Mono> to the new pubkey, re-encodes, and
-        writes the new buffer back to the LiteSVM account store.
+        writes the new buffer back to the SVM sandbox account store.
       </P>
       <Pre label="output">
 {`$ relay patch pool --set admin=$W
@@ -64,7 +64,7 @@ pnpm cli patch set vault.balance --session <sid> \\
       </Pre>
 
       <Callout>
-        Patches are not transactions. They mutate the LiteSVM account store
+        Patches are not transactions. They mutate the SVM sandbox account store
         directly. Use them to set up preconditions; use transactions to test
         the code paths your program actually runs.
       </Callout>

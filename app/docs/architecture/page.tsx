@@ -55,7 +55,7 @@ Dispatcher  →  HandlerMap[method]  →  RpcResponse { result | error }`}
 
       <H2 id="modules">Core engine modules</H2>
       <Pre label="packages/core/src/">
-{`svm/        LiteSVM wrapper (NAPI native; Electron Node ABI)
+{`svm/        SVM sandbox wrapper (NAPI native; Electron Node ABI)
 cloner/     RPC clone (ELF + accounts + blob cache)
 patcher/    Anchor IDL coder + IDL store + setField
 trace/      execution log → instruction tree parser

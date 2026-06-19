@@ -29,7 +29,7 @@ export function Footer() {
           <div>
             <Brand />
             <p className="mt-5 text-mute text-[13.5px] leading-[1.6] max-w-[34ch]">
-              LiteSVM sandbox for Solana programs. Built for protocol developers
+              SVM sandbox for Solana programs. Built for protocol developers
               who need to test what mainnet won&apos;t let them.
             </p>
             <a

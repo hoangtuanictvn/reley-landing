@@ -4,16 +4,16 @@ type Tok = { t: string; c?: 'cmd' | 'flag' | 'arg' | 'str' | 'kw' | 'fn' | 'num'
 
 function color(c?: Tok['c']) {
   switch (c) {
-    case 'cmd': return 'text-[#14f195]'
-    case 'flag': return 'text-[#7dd3fc]'
-    case 'arg': return 'text-[#e6e9ef]'
-    case 'str': return 'text-[#f9c187]'
-    case 'kw': return 'text-[#c4a3ff]'
-    case 'fn': return 'text-[#7dd3fc]'
-    case 'num': return 'text-[#f9c187]'
-    case 'cm': return 'text-[#6b7385] italic'
-    case 'p': return 'text-[#14f195]'
-    case 'op': return 'text-[#6b7385]'
+    case 'cmd': return 'text-[#aeb9f0]'
+    case 'flag': return 'text-[#9aa3b2]'
+    case 'arg': return 'text-[#e8eaf0]'
+    case 'str': return 'text-[#cdd6e8]'
+    case 'kw': return 'text-[#aeb9f0]'
+    case 'fn': return 'text-[#cdd6e8]'
+    case 'num': return 'text-[#9aa3b2]'
+    case 'cm': return 'text-[#6c7385] italic'
+    case 'p': return 'text-[#5d83ff]'
+    case 'op': return 'text-[#6c7385]'
     default: return 'text-[#9aa3b2]'
   }
 }

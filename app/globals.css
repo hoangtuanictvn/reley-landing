@@ -1,18 +1,18 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-ink: #07080a;
-  --color-surface: #0b0c10;
-  --color-surface-1: #101218;
-  --color-surface-2: #161922;
-  --color-line: #1d2230;
+  --color-ink: #08090c;
+  --color-surface: #0c0e13;
+  --color-surface-1: #11141b;
+  --color-surface-2: #161a23;
+  --color-line: #1c2230;
   --color-line-strong: #2a3142;
-  --color-mute: #6b7385;
-  --color-soft: #9aa3b2;
-  --color-fore: #e6e9ef;
-  --color-accent: #14f195;
-  --color-accent-deep: #0fbe75;
-  --color-violet: #9945ff;
+  --color-mute: #6c7385;
+  --color-soft: #9ba2b1;
+  --color-fore: #e8eaf0;
+  --color-accent: #5d83ff;
+  --color-accent-deep: #3a5fd8;
+  --color-accent-soft: #aeb9f0;
 
   --font-sans: 'Geist', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'Geist Mono', ui-monospace, 'SF Mono', monospace;
@@ -40,8 +40,8 @@ html, body {
 }
 
 ::selection {
-  background: var(--color-accent);
-  color: var(--color-ink);
+  background: rgba(93, 131, 255, 0.35);
+  color: var(--color-fore);
 }
 
 .grain {
@@ -72,7 +72,7 @@ html, body {
 }
 
 .accent-glow {
-  background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(20, 241, 149, 0.16), transparent 70%);
+  background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(93, 131, 255, 0.14), transparent 70%);
 }
 
 .hero-orb {
@@ -83,8 +83,8 @@ html, body {
   filter: blur(80px);
   pointer-events: none;
   background:
-    radial-gradient(40% 60% at 50% 40%, rgba(20, 241, 149, 0.22), transparent 70%),
-    radial-gradient(50% 60% at 70% 50%, rgba(153, 69, 255, 0.18), transparent 70%);
+    radial-gradient(40% 60% at 50% 40%, rgba(93, 131, 255, 0.22), transparent 70%),
+    radial-gradient(50% 60% at 70% 50%, rgba(93, 131, 255, 0.12), transparent 70%);
   animation: orb-drift 18s ease-in-out infinite alternate;
 }
 
@@ -112,15 +112,15 @@ html, body {
   right: 0;
   height: 1px;
   pointer-events: none;
-  background: linear-gradient(to right, transparent, rgba(20,241,149,0.55), transparent);
+  background: linear-gradient(to right, transparent, rgba(93, 131, 255, 0.55), transparent);
   animation: scan-y 7s linear infinite;
-  opacity: 0.65;
+  opacity: 0.6;
 }
 
 @keyframes scan-y {
   0%   { transform: translateY(8%); opacity: 0; }
-  10%  { opacity: 0.65; }
-  90%  { opacity: 0.65; }
+  10%  { opacity: 0.6; }
+  90%  { opacity: 0.6; }
   100% { transform: translateY(92%); opacity: 0; }
 }
 
@@ -133,7 +133,7 @@ html, body {
   inset: -1px;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(20,241,149,0.45), rgba(153,69,255,0.25) 50%, transparent 80%);
+  background: linear-gradient(135deg, rgba(93, 131, 255, 0.55), rgba(93, 131, 255, 0.05) 50%, transparent 80%);
   -webkit-mask:
     linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0);
@@ -158,14 +158,6 @@ html, body {
   margin-left: 2px;
   color: var(--color-accent);
   animation: blink-caret 1s steps(1) infinite;
-}
-
-@keyframes marquee {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-.marquee-track {
-  animation: marquee 28s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

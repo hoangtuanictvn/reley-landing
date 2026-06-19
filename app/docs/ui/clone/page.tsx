@@ -11,8 +11,8 @@ export default function CloneUi() {
       </div>
       <H1>Clone</H1>
       <Lead>
-        Bring on-chain programs and their account graph into the local sandbox
-        through the desktop UI. ELF, IDL, transitive accounts — all driven from
+        Bring on-chain programs and their account graph into the local SVM sandbox
+        through the desktop UI. ELF, IDL, transitive accounts  -  all driven from
         the sidebar.
       </Lead>
 
@@ -26,7 +26,7 @@ export default function CloneUi() {
       <Shot
         src="/docs/ui/project-shell.png"
         alt="Project shell with Programs sidebar group"
-        caption="Sidebar — Programs group with add (+) action"
+        caption="Sidebar  -  Programs group with add (+) action"
       />
 
       <H2 id="add-account">Add an account</H2>
@@ -40,7 +40,7 @@ export default function CloneUi() {
         items={[
           <>Anchor PDAs decode against the program&apos;s IDL automatically.</>,
           <>Native (SPL Token, Token-2022, lookup table) accounts are decoded against built-in layouts.</>,
-          <>Unknown layouts still clone — Relay stores the raw buffer and shows it as hex.</>,
+          <>Unknown layouts still clone  -  Relay stores the raw buffer and shows it as hex.</>,
         ]}
       />
 
@@ -54,7 +54,7 @@ export default function CloneUi() {
 
       <Callout>
         Public mainnet RPC keeps account state for roughly two epochs. For
-        replay or historical clone — set the project RPC to an archive endpoint
+        replay or historical clone  -  set the project RPC to an archive endpoint
         (Helius, Triton, QuickNode).
       </Callout>
 

@@ -26,19 +26,19 @@ export default function PatchUi() {
       <Shot
         src="/docs/ui/project-shell.png"
         alt="Patches sidebar group with Project and Sandbox scopes"
-        caption="Sidebar — Patches with Project + Sandbox scopes"
+        caption="Sidebar  -  Patches with Project + Sandbox scopes"
       />
 
       <H2 id="modes">Three modes</H2>
       <Bullets
         items={[
           <><b className="text-fore">IDL field set.</b> Anchor accounts open with a typed field tree. Pick a field, type a new value, save. Discriminator preserved.</>,
-          <><b className="text-fore">Native layout.</b> SPL Token mint authority, Token-2022 extensions, lookup table addresses — all surfaced as named fields.</>,
+          <><b className="text-fore">Native layout.</b> SPL Token mint authority, Token-2022 extensions, lookup table addresses  -  all surfaced as named fields.</>,
           <><b className="text-fore">Raw splice.</b> Byte-offset editor for accounts with no decoder. Pick offset, supply hex bytes, save.</>,
         ]}
       />
 
-      <H2 id="example">Example — flip a pool admin</H2>
+      <H2 id="example">Example  -  flip a pool admin</H2>
       <P>
         Open the Patch editor on a Meteora DLMM pool PDA. Find <Mono>admin</Mono>{' '}
         in the field tree, click the value, paste your wallet pubkey, save.
@@ -50,12 +50,12 @@ export default function PatchUi() {
       <Bullets
         items={[
           <><Mono>Project</Mono> patches re-apply on every session reset and on every new session.</>,
-          <><Mono>Sandbox</Mono> patches are wiped by a session reset — useful for scratch experiments you don&apos;t want to keep.</>,
+          <><Mono>Sandbox</Mono> patches are wiped by a session reset  -  useful for scratch experiments you don&apos;t want to keep.</>,
         ]}
       />
 
       <Callout>
-        Patches are not transactions. They mutate the LiteSVM account store
+        Patches are not transactions. They mutate the SVM sandbox account store
         directly. Use them to set up preconditions; use transactions to test
         the code paths your program actually runs.
       </Callout>

@@ -32,13 +32,8 @@ export function Workflow() {
     >
       <div className="mx-auto max-w-[1320px] px-6">
         <Reveal>
-          <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-accent-deep">
-            Workflows
-          </div>
-        </Reveal>
-        <Reveal delay={0.05}>
           <div className="max-w-[68ch]">
-            <h2 className="mt-4 text-fore text-[36px] md:text-[54px] leading-[1.06] tracking-[-0.028em] font-medium [text-wrap:balance]">
+            <h2 className="text-fore text-[36px] md:text-[54px] leading-[1.06] tracking-[-0.028em] font-medium [text-wrap:balance]">
               Scripted scenarios.
               <br />
               <span className="text-mute">Reusable, deterministic.</span>
@@ -93,7 +88,7 @@ export function Workflow() {
             {[
               {
                 k: 'in-process',
-                v: 'LiteSVM via NAPI. No validator, no gossip, no RPC round-trip.',
+                v: 'SVM sandbox via NAPI. No validator, no gossip, no RPC round-trip.',
               },
               {
                 k: 'deterministic',

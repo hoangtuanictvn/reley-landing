@@ -55,7 +55,7 @@ await connection.sendTransaction(tx, [payer])`}
       <H2 id="inspect">Watch traffic</H2>
       <P>
         The history dock at the bottom (<Mono>⌘J</Mono>) shows every tx the
-        server accepts — same view as txs sent from the Tx Builder. Click a
+        server accepts  -  same view as txs sent from the Tx Builder. Click a
         row for the decoded instruction tree, CU per frame, logs, and account
         diff.
       </P>
@@ -70,7 +70,7 @@ await connection.sendTransaction(tx, [payer])`}
         Phantom&apos;s dev RPC field accepts custom URLs. Point it at your
         session URL, switch the wallet to <Mono>Devnet</Mono> slot, connect any
         dApp running locally. Signing uses the real Phantom keypair; execution
-        lands in your sandbox.
+        lands in your SVM sandbox.
       </P>
 
       <H2 id="methods">Implemented methods</H2>

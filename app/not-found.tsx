@@ -12,7 +12,7 @@ export default function NotFound() {
             404
           </div>
           <h1 className="text-fore text-[44px] md:text-[56px] leading-[1.04] tracking-[-0.028em] font-medium [text-wrap:balance]">
-            Page not in the sandbox.
+            Page not in the SVM sandbox.
           </h1>
           <p className="mt-6 text-soft text-[16.5px] leading-[1.6] max-w-[52ch]">
             That route doesn&apos;t exist. Head back to the landing page or jump
@@ -21,7 +21,7 @@ export default function NotFound() {
           <div className="mt-10 flex flex-wrap items-center gap-5">
             <Link
               href="/"
-              className="group inline-flex items-center gap-2 h-[44px] px-5 rounded-[10px] bg-accent text-ink font-medium text-[14px] hover:bg-[#19ffa0] transition-all active:translate-y-[1px]"
+              className="group inline-flex items-center gap-2 h-[44px] px-5 rounded-[10px] bg-accent text-ink font-medium text-[14px] hover:bg-[#6e92ff] transition-all active:translate-y-[1px]"
             >
               <ArrowLeft size={14} weight="bold" className="transition-transform group-hover:-translate-x-0.5" />
               Back home

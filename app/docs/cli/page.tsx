@@ -27,8 +27,8 @@ export default function Cli() {
 
       <H2 id="raw">Raw clone &amp; run</H2>
       <P>
-        Stateless commands. No project, no session — just clone bytes or
-        execute one tx in a throwaway LiteSVM. Useful for scripting and CI.
+        Stateless commands. No project, no session  -  just clone bytes or
+        execute one tx in a throwaway SVM sandbox. Useful for scripting and CI.
       </P>
       <Pre label="clone-program">
 {`pnpm cli clone-program <programId> \\
@@ -64,7 +64,7 @@ pnpm cli project delete <id>`}
 
       <H2 id="session">session</H2>
       <P>
-        A session is one LiteSVM instance hydrated with the project&apos;s
+        A session is one SVM sandbox instance hydrated with the project&apos;s
         programs and accounts. Reset to discard mutations and re-hydrate.
       </P>
       <Pre label="commands">
@@ -111,9 +111,9 @@ pnpm cli account remove <address> --project <id>`}
   [--session <id>] [--rpc-url <archive-url>]`}
       </Pre>
       <Callout kind="warn">
-        Replay reads cloned account state at <Mono>slot − 1</Mono> to
+        Replay reads cloned account state at <Mono>slot - 1</Mono> to
         reconstruct pre-tx state. The default public RPC drops historical reads
-        — point at an archive RPC (Helius, Triton, QuickNode) via{' '}
+         -  point at an archive RPC (Helius, Triton, QuickNode) via{' '}
         <Mono>--rpc-url</Mono>.
       </Callout>
 

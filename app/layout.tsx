@@ -6,7 +6,7 @@ const geistSans = Geist({ subsets: ['latin'], variable: '--font-geist-sans', dis
 const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono', display: 'swap' })
 
 export const metadata: Metadata = {
-  title: 'Relay · LiteSVM sandbox for Solana programs',
+  title: 'Relay · Local SVM sandbox for Solana programs',
   description:
     'Clone any on-chain Solana program. Patch PDA state. Simulate transactions locally. Without touching mainnet.',
   metadataBase: new URL('https://relay.dev'),
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     icon: [{ url: '/logo-mark.svg', type: 'image/svg+xml' }],
   },
   openGraph: {
-    title: 'Relay · LiteSVM sandbox for Solana programs',
+    title: 'Relay · Local SVM sandbox for Solana programs',
     description:
       'Clone any on-chain Solana program. Patch PDA state. Simulate transactions locally.',
     type: 'website',

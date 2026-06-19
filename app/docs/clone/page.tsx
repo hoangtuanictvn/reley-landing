@@ -12,7 +12,7 @@ export default function Clone() {
       <H1>Clone</H1>
       <Lead>
         Pull any program and its account graph from a live RPC into the local
-        sandbox. Cache forever, hydrate in milliseconds.
+        SVM sandbox. Cache forever, hydrate in milliseconds.
       </Lead>
 
       <H2 id="what">What gets cloned</H2>

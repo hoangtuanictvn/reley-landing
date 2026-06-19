@@ -12,8 +12,8 @@ export default function Replay() {
       <H1>Replay</H1>
       <Lead>
         Take any mainnet transaction by signature and run it locally. Relay
-        fetches every touched account at <Mono>slot − 1</Mono>, executes the
-        transaction in LiteSVM, then diffs the local result against the
+        fetches every touched account at <Mono>slot - 1</Mono>, executes the
+        transaction in SVM sandbox, then diffs the local result against the
         on-chain one.
       </Lead>
 
@@ -21,7 +21,7 @@ export default function Replay() {
       <Bullets
         items={[
           <>Resolve the signature against the archive RPC. Pull the message, signers, recent blockhash.</>,
-          <>Walk the touched account set. For each, fetch the state at <Mono>slot − 1</Mono>.</>,
+          <>Walk the touched account set. For each, fetch the state at <Mono>slot - 1</Mono>.</>,
           <>Hydrate a scratch session with that account set. Apply project patches.</>,
           <>Execute the transaction.</>,
           <>Diff each touched account against the mainnet post-state. Report mismatches.</>,

@@ -53,13 +53,13 @@ export function Bento() {
         </Reveal>
         <Reveal delay={0.05}>
           <h2 className="mt-4 text-fore text-[36px] md:text-[54px] leading-[1.04] tracking-[-0.028em] font-medium max-w-[18ch] [text-wrap:balance]">
-            The simulator that thinks it&apos;s mainnet.
+            The SVM sandbox that thinks it&apos;s mainnet.
           </h2>
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mt-5 text-soft text-[16.5px] max-w-[58ch] leading-[1.6] [text-wrap:pretty]">
-            Real ELFs. Real account state. Real Anchor IDLs. Per-session LiteSVM,
-            sealed off from anything that costs SOL.
+            Real ELFs. Real account state. Real Anchor IDLs. Per-session SVM
+            sandbox, sealed off from anything that costs SOL.
           </p>
         </Reveal>
 
@@ -144,7 +144,7 @@ export function Bento() {
                 />
                 <div className="border-t md:border-t-0 md:border-l border-line p-7 md:p-8 bg-surface">
                   <div className="font-mono text-[10.5px] text-mute uppercase tracking-[0.22em] mb-4">
-                    diff · happy-path ↔ zero-liquidity
+                    diff · happy-path vs zero-liquidity
                   </div>
                   <div className="grid grid-cols-2 gap-x-6 gap-y-2 font-mono text-[12.5px]">
                     <span className="text-mute">slot</span>
@@ -152,7 +152,7 @@ export function Bento() {
                     <span className="text-mute">compute</span>
                     <span className="text-soft tabular-nums">183,402 cu</span>
                     <span className="text-mute">pool.reserve_a</span>
-                    <span className="text-accent tabular-nums">− 4,802,113</span>
+                    <span className="text-accent tabular-nums">- 4,802,113</span>
                     <span className="text-mute">pool.reserve_b</span>
                     <span className="text-accent tabular-nums">+ 19.4 SOL</span>
                     <span className="text-mute">hash</span>

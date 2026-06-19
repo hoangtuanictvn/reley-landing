@@ -11,7 +11,7 @@ export default function FirstSession() {
       </div>
       <H1>First session</H1>
       <Lead>
-        Five minutes from install to a running LiteSVM that thinks it&apos;s
+        Five minutes from install to a running SVM sandbox that thinks it&apos;s
         mainnet. We&apos;ll create a project, clone a program, patch a field,
         and send a transaction.
       </Lead>
@@ -40,7 +40,7 @@ export default function FirstSession() {
 
       <H2 id="session">Open a session</H2>
       <P>
-        A session is one LiteSVM instance hydrated with the project&apos;s
+        A session is one SVM sandbox instance hydrated with the project&apos;s
         programs and accounts. Patches apply on session creation. Reset to
         discard mutations.
       </P>

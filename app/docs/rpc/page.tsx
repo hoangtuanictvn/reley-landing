@@ -53,7 +53,7 @@ await connection.sendTransaction(tx, [payer])`}
         Phantom&apos;s dev RPC field accepts custom URLs. Point it at your
         session URL, switch the wallet to <Mono>Devnet</Mono> network slot,
         and connect any dApp running locally. Transactions will sign with the
-        real Phantom keypair and execute in the sandbox.
+        real Phantom keypair and execute in the SVM sandbox.
       </P>
 
       <H2 id="methods">Implemented methods</H2>

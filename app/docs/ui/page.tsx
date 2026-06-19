@@ -14,7 +14,7 @@ export default function Ui() {
         Every Relay project opens in its own window. The shell stays the same:
         left sidebar for project assets, center pane for the active panel, right
         rail for shortcuts and the inspector. Everything below talks to the
-        same dispatcher the CLI does — no GUI-only state.
+        same dispatcher the CLI does  -  no GUI-only state.
       </Lead>
 
       <H2 id="welcome">Welcome</H2>
@@ -26,7 +26,7 @@ export default function Ui() {
       <Shot
         src="/docs/ui/welcome.png"
         alt="Welcome screen showing Open / New project actions, recent projects, and use-case cards"
-        caption="Welcome — entry point for projects"
+        caption="Welcome  -  entry point for projects"
       />
 
       <H2 id="project-shell">Project shell</H2>
@@ -35,25 +35,25 @@ export default function Ui() {
         <Mono>Automations</Mono> (workflows + test suites), <Mono>Tx Templates</Mono>,{' '}
         <Mono>Programs</Mono>, and <Mono>Patches</Mono>. The center pane swaps
         between Tx Builder, Workflow editor, Patch editor, Inspector, and so on.
-        A goal picker prompts you to start a workflow or test suite — dismiss
+        A goal picker prompts you to start a workflow or test suite  -  dismiss
         with <Mono>Just let me explore</Mono>.
       </P>
       <Shot
         src="/docs/ui/project-shell.png"
         alt="Project shell with sidebar groups expanded and goal picker dismissed"
-        caption="Project shell — sidebar + main pane"
+        caption="Project shell  -  sidebar + main pane"
       />
 
       <H3 id="help">Help panel</H3>
       <P>
-        The right rail&apos;s <Mono>?</Mono> icon opens the orientation help —
+        The right rail&apos;s <Mono>?</Mono> icon opens the orientation help  - 
         on-disk layout, anatomy of a project, where each piece lives. Toggle off
         with the same icon or <Mono>Esc</Mono>.
       </P>
       <Shot
         src="/docs/ui/help-panel.png"
         alt="Help panel docked on the right with project orientation copy and on-disk layout"
-        caption="Help — orientation + on-disk layout"
+        caption="Help  -  orientation + on-disk layout"
       />
 
       <H2 id="tx-builder">Tx Builder</H2>
@@ -67,7 +67,7 @@ export default function Ui() {
       <Shot
         src="/docs/ui/tx-builder.png"
         alt="Tx Builder pane with program picker, advanced signing/budget section, and Simulate/Submit actions"
-        caption="Tx Builder — build, simulate, submit"
+        caption="Tx Builder  -  build, simulate, submit"
       />
       <Callout>
         Templates save the current tx (instructions + form state) under a
@@ -85,17 +85,17 @@ export default function Ui() {
       <Shot
         src="/docs/ui/workflows-list.png"
         alt="Sidebar with Workflows group expanded showing 8 workflows"
-        caption="Workflows — grouped under Automations"
+        caption="Workflows  -  grouped under Automations"
       />
       <Shot
         src="/docs/ui/workflow-detail.png"
         alt="Workflow detail showing steps 1-9 with airdrop and reset-sandbox actions"
-        caption="Workflow detail — steps run in order"
+        caption="Workflow detail  -  steps run in order"
       />
 
       <H2 id="palette">Command palette</H2>
       <P>
-        <Mono>⌘K</Mono> opens the command palette — every navigation target,
+        <Mono>⌘K</Mono> opens the command palette  -  every navigation target,
         workspace command, and project action in one fuzzy-search list. View
         section jumps to Workspace / Keypairs / Snapshots; Workspace section
         switches the center pane; Command section creates new things or toggles
@@ -104,7 +104,7 @@ export default function Ui() {
       <Shot
         src="/docs/ui/command-palette.png"
         alt="Command palette open with View, Workspace, and Command sections listed"
-        caption="⌘K — palette"
+        caption="⌘K  -  palette"
       />
 
       <H2 id="status">Status bar</H2>

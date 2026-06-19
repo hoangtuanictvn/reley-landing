@@ -11,7 +11,7 @@ export default function FirstSessionUi() {
       </div>
       <H1>First session</H1>
       <Lead>
-        Five minutes from launching the app to a running LiteSVM that thinks
+        Five minutes from launching the app to a running SVM sandbox that thinks
         it&apos;s mainnet. Create a project, clone a program, patch a field,
         send a tx.
       </Lead>
@@ -24,8 +24,8 @@ export default function FirstSessionUi() {
       </P>
       <Shot
         src="/docs/ui/welcome.png"
-        alt="Welcome screen — open / new project, recent projects, use-case cards"
-        caption="Welcome — pick a project or create one"
+        alt="Welcome screen  -  open / new project, recent projects, use-case cards"
+        caption="Welcome  -  pick a project or create one"
       />
 
       <H2 id="clone">Clone a program</H2>
@@ -38,7 +38,7 @@ export default function FirstSessionUi() {
       <Shot
         src="/docs/ui/project-shell.png"
         alt="Project shell with sidebar groups expanded"
-        caption="Project shell — sidebar drives everything"
+        caption="Project shell  -  sidebar drives everything"
       />
 
       <H2 id="session">Pick a session</H2>
@@ -58,14 +58,14 @@ export default function FirstSessionUi() {
       <Shot
         src="/docs/ui/tx-builder.png"
         alt="Tx Builder pane with program picker and Simulate/Submit actions"
-        caption="Tx Builder — pick, fill, submit"
+        caption="Tx Builder  -  pick, fill, submit"
       />
 
       <H2 id="serve">Publish as JSON-RPC</H2>
       <P>
         Open the right rail Inspector → <Mono>Details</Mono> → find the{' '}
         <Mono>RPC endpoint</Mono> card → <Mono>Start</Mono>. The session URL
-        appears — copy it and point any Solana client at it.
+        appears  -  copy it and point any Solana client at it.
       </P>
 
       <Callout>

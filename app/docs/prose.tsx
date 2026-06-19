@@ -95,7 +95,7 @@ export function Shot({ src, alt, caption }: { src: string; alt: string; caption?
 export function Callout({ kind = 'info', children }: { kind?: 'info' | 'warn'; children: ReactNode }) {
   const tint =
     kind === 'warn'
-      ? 'border-[#f9c187]/30 bg-[#f9c187]/[0.04]'
+      ? 'border-[#d8a86a]/30 bg-[#d8a86a]/[0.04]'
       : 'border-accent/30 bg-accent/[0.04]'
   return (
     <div className={`mt-6 rounded-[10px] border ${tint} px-5 py-4 max-w-[68ch]`}>

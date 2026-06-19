@@ -14,13 +14,7 @@ export function CTA() {
       <div className="dotgrid absolute inset-0 pointer-events-none opacity-40" />
       <div className="relative mx-auto max-w-[1100px] px-6 text-center">
         <Reveal>
-          <div className="inline-flex items-center gap-2 h-[28px] px-3 rounded-full border border-line bg-surface-1/60 font-mono text-[11.5px] text-soft">
-            <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            Free for noncommercial use
-          </div>
-        </Reveal>
-        <Reveal delay={0.06}>
-          <h2 className="mt-7 text-fore text-[44px] md:text-[72px] leading-[0.98] tracking-[-0.03em] font-medium [text-wrap:balance]">
+          <h2 className="text-fore text-[44px] md:text-[72px] leading-[0.98] tracking-[-0.03em] font-medium [text-wrap:balance]">
             Stop testing
             <br />
             <span className="text-mute">against production.</span>
@@ -36,7 +30,7 @@ export function CTA() {
           <div className="mt-10 inline-flex flex-wrap items-center justify-center gap-5">
             <a
               href="#download"
-              className="group inline-flex items-center gap-2 h-[50px] px-6 rounded-[10px] bg-accent text-ink font-medium text-[15px] hover:bg-[#19ffa0] transition-all active:translate-y-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
+              className="group inline-flex items-center gap-2 h-[50px] px-6 rounded-[10px] bg-accent text-ink font-medium text-[15px] hover:bg-[#6e92ff] transition-all active:translate-y-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
             >
               Download for macOS
               <ArrowRight size={16} weight="bold" className="transition-transform group-hover:translate-x-0.5" />

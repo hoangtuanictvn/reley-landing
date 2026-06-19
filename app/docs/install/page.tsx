@@ -21,7 +21,7 @@ export default function Install() {
           <>macOS 12 or newer. Apple Silicon and Intel both supported.</>,
           <>Node <Mono>{'>='}</Mono> 22.13 (engines field). Use <Mono>nvm</Mono> if your system has an older Node.</>,
           <>pnpm 11. Corepack will install the right version from the lockfile.</>,
-          <>Native modules (<Mono>litesvm</Mono>, <Mono>better-sqlite3</Mono>) load under Electron&apos;s Node ABI.</>,
+          <>Native modules (<Mono>svm-sandbox</Mono>, <Mono>better-sqlite3</Mono>) load under Electron&apos;s Node ABI.</>,
         ]}
       />
 
@@ -68,7 +68,7 @@ pnpm cli session create main --project <pid>`}
       </Pre>
 
       <Callout>
-        Replay needs an archive RPC for <Mono>slot − 1</Mono> reads. Default
+        Replay needs an archive RPC for <Mono>slot - 1</Mono> reads. Default
         public mainnet won&apos;t serve historical accounts beyond the retention
         window. Use Helius, Triton, or your own archive node.
       </Callout>

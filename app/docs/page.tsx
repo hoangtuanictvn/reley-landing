@@ -13,7 +13,7 @@ export default function DocsIndex() {
       </div>
       <H1>Overview</H1>
       <Lead>
-        Relay is a per-project, per-session LiteSVM sandbox loaded with real
+        Relay is a per-project, per-session SVM sandbox loaded with real
         on-chain Solana programs. Clone, patch, replay, and publish a session
         as a Solana-compatible JSON-RPC endpoint.
       </Lead>
@@ -32,7 +32,7 @@ export default function DocsIndex() {
           </>,
           <>
             <Mono>Replay</Mono> any historical mainnet transaction by signature.
-            Hydrates at <Mono>slot − 1</Mono>, executes, diffs.
+            Hydrates at <Mono>slot - 1</Mono>, executes, diffs.
           </>,
           <>
             <Mono>Serve</Mono> a session as Solana JSON-RPC at{' '}

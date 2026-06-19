@@ -12,8 +12,8 @@ export function Trust() {
   return (
     <section className="relative py-16 border-y border-line bg-surface/40">
       <div className="mx-auto max-w-[1320px] px-6">
-        <div className="font-mono text-[10.5px] uppercase tracking-[0.24em] text-mute mb-8">
-          Programs Relay has been pointed at
+        <div className="text-mute text-[13px] mb-8">
+          Programs Relay has been pointed at.
         </div>
         <ul className="flex flex-wrap items-center gap-x-10 gap-y-5">
           {BRANDS.map((b, i) => (
