@@ -7,9 +7,50 @@ import { Trust } from './components/trust'
 import { UseCase } from './components/usecase'
 import { Workflow } from './components/workflow'
 
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://relay.dev'
+
+const JSON_LD = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'SoftwareApplication',
+      '@id': `${SITE}/#app`,
+      name: 'Relay',
+      applicationCategory: 'DeveloperApplication',
+      operatingSystem: 'macOS',
+      description:
+        'Local SVM sandbox for Solana programs. Clone, patch, simulate, publish a JSON-RPC URL.',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      url: SITE,
+      image: `${SITE}/og.png`,
+      softwareVersion: '0.1',
+    },
+    {
+      '@type': 'Organization',
+      '@id': `${SITE}/#org`,
+      name: 'Relay',
+      url: SITE,
+      logo: `${SITE}/logo-mark.svg`,
+      sameAs: ['https://github.com/hoangtuanictvn/relay'],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE}/#site`,
+      name: 'Relay',
+      url: SITE,
+      publisher: { '@id': `${SITE}/#org` },
+    },
+  ],
+}
+
 export default function Page() {
   return (
     <main className="relative">
+      <script
+        type="application/ld+json"
+        // biome-ignore lint: structured-data inline
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
+      />
       <Nav />
       <Hero />
       <Trust />

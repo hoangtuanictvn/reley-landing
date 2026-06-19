@@ -1,0 +1,13 @@
+{
+  "name": "Relay",
+  "short_name": "Relay",
+  "description": "Local SVM sandbox for Solana programs.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#08090c",
+  "theme_color": "#08090c",
+  "icons": [
+    { "src": "/logo-mark.svg", "type": "image/svg+xml", "sizes": "any", "purpose": "any" }
+  ]
+}
