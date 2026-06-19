@@ -3,7 +3,7 @@ import { ArrowRight, AppleLogo, WindowsLogo, LinuxLogo, GithubLogo } from '@phos
 import { Nav } from '../components/nav'
 import { Footer } from '../components/footer'
 import { Reveal } from '../components/reveal'
-import { DOWNLOAD_URL } from '../lib/links'
+import { DOWNLOAD_URLS, type Platform } from '../lib/links'
 
 export const metadata: Metadata = {
   title: 'Download · Relay',
@@ -14,8 +14,8 @@ type Build = {
   icon: React.ComponentType<{ size?: number; weight?: 'regular' | 'bold' | 'fill' }>
   label: string
   detail: string
-  href: string
-  status: 'ready' | 'soon'
+  platform: Platform
+  ext: string
 }
 
 const BUILDS: Build[] = [
@@ -23,29 +23,29 @@ const BUILDS: Build[] = [
     icon: AppleLogo,
     label: 'macOS · Apple Silicon',
     detail: 'macOS 12+. M1, M2, M3, M4.',
-    href: DOWNLOAD_URL,
-    status: 'ready',
+    platform: 'macArm',
+    ext: '.dmg',
   },
   {
     icon: AppleLogo,
     label: 'macOS · Intel',
     detail: 'macOS 12+. x86_64 Macs.',
-    href: DOWNLOAD_URL,
-    status: 'ready',
+    platform: 'macIntel',
+    ext: '.dmg',
   },
   {
     icon: WindowsLogo,
     label: 'Windows',
     detail: 'Windows 11 64-bit. NSIS installer.',
-    href: '#',
-    status: 'soon',
+    platform: 'win',
+    ext: '.exe',
   },
   {
     icon: LinuxLogo,
     label: 'Linux',
     detail: 'AppImage + deb. Ubuntu 22.04+.',
-    href: '#',
-    status: 'soon',
+    platform: 'linux',
+    ext: '.AppImage',
   },
 ]
 
@@ -100,7 +100,8 @@ export default function DownloadPage() {
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
               {BUILDS.map((b) => {
                 const Icon = b.icon
-                const ready = b.status === 'ready'
+                const href = DOWNLOAD_URLS[b.platform]
+                const ready = href.length > 0
                 return (
                   <article
                     key={b.label}
@@ -122,7 +123,7 @@ export default function DownloadPage() {
                     <div className="mt-6 flex items-center gap-3">
                       {ready ? (
                         <a
-                          href={b.href}
+                          href={href}
                           className="group inline-flex items-center gap-2 h-[40px] px-4 rounded-[9px] bg-fore text-ink font-medium text-[13.5px] hover:bg-[#f4f6fb] transition-colors active:translate-y-[1px] shadow-[inset_0_1px_0_rgba(255,255,255,0.5),0_18px_30px_-18px_rgba(0,0,0,0.6)]"
                         >
                           Download
@@ -135,7 +136,7 @@ export default function DownloadPage() {
                       )}
                       {ready && (
                         <span className="font-mono text-[11.5px] text-mute uppercase tracking-[0.18em]">
-                          .dmg
+                          {b.ext}
                         </span>
                       )}
                     </div>

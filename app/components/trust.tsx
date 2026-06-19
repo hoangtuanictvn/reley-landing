@@ -1,34 +1,36 @@
-const BRANDS = [
-  'Meteora',
-  'Kamino',
-  'Jupiter',
-  'Drift',
-  'Phantom',
-  'Helius',
-  'Jito',
-]
+import { BRAND_LOGOS, type BrandKey } from './brand-logos'
+
+const BRANDS: BrandKey[] = ['Meteora', 'Kamino', 'Jupiter', 'Phantom']
 
 export function Trust() {
   return (
     <section className="relative py-16 border-y border-line bg-surface/40">
-      <div className="mx-auto max-w-[1320px] px-6">
+      <div className="mx-auto max-w-[1320px] px-4 sm:px-6">
         <div className="text-mute text-[13px] mb-8">
           Programs Relay has been pointed at.
         </div>
-        <ul className="flex flex-wrap items-center gap-x-10 gap-y-5">
-          {BRANDS.map((b, i) => (
-            <li key={b} className="flex items-center gap-x-10">
-              <span
-                className="text-[20px] tracking-[-0.005em] text-soft/65 hover:text-fore transition-colors"
-                style={{ fontVariant: 'small-caps' }}
+        <ul className="flex flex-wrap items-center gap-x-12 gap-y-6">
+          {BRANDS.map((b) => {
+            const entry = BRAND_LOGOS[b]
+            const Logo = entry.Logo
+            return (
+              <li
+                key={b}
+                className="inline-flex items-center gap-2.5 text-soft/75 hover:text-fore transition-colors"
+                title={b}
               >
-                {b}
-              </span>
-              {i < BRANDS.length - 1 && (
-                <span aria-hidden className="hidden lg:inline-block h-1 w-1 rounded-full bg-line-strong" />
-              )}
-            </li>
-          ))}
+                <Logo size={entry.height} />
+                {!entry.hasWordmark && (
+                  <span
+                    className="text-[15px] tracking-[-0.005em]"
+                    style={{ fontVariant: 'small-caps' }}
+                  >
+                    {b}
+                  </span>
+                )}
+              </li>
+            )
+          })}
         </ul>
       </div>
     </section>

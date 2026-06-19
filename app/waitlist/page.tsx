@@ -34,6 +34,8 @@ const FEATURES = [
   },
 ]
 
+const WAITLIST_ENABLED = !!process.env.RESEND_API_KEY
+
 export default function CloudPage() {
   return (
     <main className="relative">
@@ -63,7 +65,7 @@ export default function CloudPage() {
 
           <Reveal delay={0.18}>
             <div className="mt-10">
-              <Waitlist source="cloud-hero" />
+              <Waitlist source="cloud-hero" enabled={WAITLIST_ENABLED} />
             </div>
           </Reveal>
 
@@ -152,7 +154,7 @@ export default function CloudPage() {
                   email per launch. Unsubscribe instantly.
                 </p>
                 <div className="mt-5">
-                  <Waitlist source="cloud-secondary" compact />
+                  <Waitlist source="cloud-secondary" compact enabled={WAITLIST_ENABLED} />
                 </div>
               </div>
             </Reveal>
