@@ -27,13 +27,13 @@ export default function FirstSession() {
 
       <H2 id="clone">Clone a program</H2>
       <P>
-        Add the SPL Memo program by pubkey. Relay fetches the ELF, resolves the
+        Add the SPL Memo program by pubkey. Relay fetches the Program, resolves the
         IDL if one is registered, and caches the blob locally.
       </P>
       <Pre label="terminal">
 {`$ pnpm cli program add MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr \\
     --project j_a91
-↻ fetching ELF       21 KB
+↻ fetching Program       21 KB
 ↻ resolving IDL      none on-chain
 ✓ cloned             MEMO_v2`}
       </Pre>

@@ -21,7 +21,7 @@ export default function NotFound() {
           <div className="mt-10 flex flex-wrap items-center gap-5">
             <Link
               href="/"
-              className="group inline-flex items-center gap-2 h-[44px] px-5 rounded-[10px] bg-accent text-ink font-medium text-[14px] hover:bg-[#6e92ff] transition-all active:translate-y-[1px]"
+              className="group inline-flex items-center gap-2 h-[44px] px-5 rounded-[10px] bg-fore text-ink font-medium text-[14px] hover:bg-[#f4f6fb] transition-all active:translate-y-[1px]"
             >
               <ArrowLeft size={14} weight="bold" className="transition-transform group-hover:-translate-x-0.5" />
               Back home

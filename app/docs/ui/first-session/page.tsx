@@ -33,7 +33,7 @@ export default function FirstSessionUi() {
         Inside the project, expand <Mono>PROGRAMS</Mono> in the sidebar, hit{' '}
         <Mono>+</Mono>, paste a program id (e.g. SPL Memo:{' '}
         <Mono>MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr</Mono>). Relay pulls
-        the ELF and any registered Anchor IDL.
+        the Program and any registered Anchor IDL.
       </P>
       <Shot
         src="/docs/ui/project-shell.png"

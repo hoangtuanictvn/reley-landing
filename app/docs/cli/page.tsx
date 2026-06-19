@@ -75,7 +75,7 @@ pnpm cli session delete <id>`}
       </Pre>
 
       <H2 id="program">program</H2>
-      <P>Project-scoped program catalog. Clones the ELF + IDL on add.</P>
+      <P>Project-scoped program catalog. Clones the Program + IDL on add.</P>
       <Pre label="commands">
 {`pnpm cli program add <programId> --project <id> \\
   [--rpc-url <url>] [--slot <n>]

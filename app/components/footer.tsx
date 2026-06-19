@@ -17,7 +17,14 @@ const LINKS: { group: string; items: Link[] }[] = [
     items: [
       { label: 'Overview', href: '/docs' },
       { label: 'Install', href: '/docs/install' },
-      { label: 'First session', href: '/docs/first-session' },
+      { label: 'First sandbox', href: '/docs/first-session' },
+    ],
+  },
+  {
+    group: 'Legal',
+    items: [
+      { label: 'Privacy', href: '/privacy' },
+      { label: 'Terms', href: '/terms' },
     ],
   },
 ]
@@ -26,7 +33,7 @@ export function Footer() {
   return (
     <footer className="relative border-t border-line bg-surface">
       <div className="mx-auto max-w-[1320px] px-6 py-20">
-        <div className="grid grid-cols-2 md:grid-cols-[1.6fr_1fr_1fr] gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-[1.6fr_1fr_1fr_1fr] gap-12">
           <div>
             <Brand />
             <p className="mt-5 text-mute text-[13.5px] leading-[1.6] max-w-[34ch]">
@@ -61,10 +68,16 @@ export function Footer() {
             </div>
           ))}
         </div>
-        <div className="mt-16 pt-6 border-t border-line flex flex-wrap items-center justify-between gap-3">
-          <span className="font-mono text-[11px] text-mute uppercase tracking-[0.2em]">
-            PolyForm Noncommercial 1.0
-          </span>
+        <div className="mt-16 pt-6 border-t border-line flex flex-wrap items-center justify-between gap-4">
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 font-mono text-[11px] text-mute uppercase tracking-[0.2em]">
+            <span>PolyForm Noncommercial 1.0</span>
+            <a href="/privacy" className="hover:text-fore transition-colors">
+              Privacy
+            </a>
+            <a href="/terms" className="hover:text-fore transition-colors">
+              Terms
+            </a>
+          </div>
           <span className="font-mono text-[11px] text-mute uppercase tracking-[0.2em]">
             Not affiliated with the Solana Foundation
           </span>

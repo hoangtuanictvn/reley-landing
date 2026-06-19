@@ -4,7 +4,7 @@ import { DOWNLOAD_URL } from '../lib/links'
 
 export function CTA() {
   return (
-    <section id="download" className="relative py-32 md:py-48 border-t border-line overflow-hidden">
+    <section id="download" className="relative py-20 md:py-48 border-t border-line overflow-hidden">
       <div
         className="absolute inset-x-0 bottom-0 h-[520px] pointer-events-none"
         style={{
@@ -13,9 +13,9 @@ export function CTA() {
         }}
       />
       <div className="dotgrid absolute inset-0 pointer-events-none opacity-40" />
-      <div className="relative mx-auto max-w-[1100px] px-6 text-center">
+      <div className="relative mx-auto max-w-[1100px] px-4 sm:px-6 text-center">
         <Reveal>
-          <h2 className="text-fore text-[44px] md:text-[72px] leading-[0.98] tracking-[-0.03em] font-medium [text-wrap:balance]">
+          <h2 className="text-fore text-[34px] sm:text-[44px] md:text-[64px] lg:text-[72px] leading-[1] tracking-[-0.03em] font-medium [text-wrap:balance]">
             Stop testing
             <br />
             <span className="text-mute">against production.</span>
@@ -31,7 +31,7 @@ export function CTA() {
           <div className="mt-10 inline-flex flex-wrap items-center justify-center gap-5">
             <a
               href={DOWNLOAD_URL}
-              className="group inline-flex items-center gap-2 h-[50px] px-6 rounded-[10px] bg-accent text-ink font-medium text-[15px] hover:bg-[#6e92ff] transition-all active:translate-y-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
+              className="group inline-flex items-center gap-2 h-[50px] px-6 rounded-[10px] bg-fore text-ink font-medium text-[15px] hover:bg-[#f4f6fb] transition-all active:translate-y-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-ink shadow-[inset_0_1px_0_rgba(255,255,255,0.5),0_22px_40px_-22px_rgba(0,0,0,0.6)]"
             >
               Download for macOS
               <ArrowRight size={16} weight="bold" className="transition-transform group-hover:translate-x-0.5" />

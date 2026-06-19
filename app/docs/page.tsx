@@ -22,7 +22,7 @@ export default function DocsIndex() {
       <Bullets
         items={[
           <>
-            <Mono>Clone</Mono> any program by pubkey. ELF, account state, Anchor
+            <Mono>Clone</Mono> any program by pubkey. Program, account state, Anchor
             IDL, transitive PDAs.
           </>,
           <>

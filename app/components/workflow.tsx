@@ -28,19 +28,19 @@ export function Workflow() {
   return (
     <section
       id="workflow"
-      className="relative py-28 md:py-40 border-t border-line overflow-hidden"
+      className="relative py-20 md:py-40 border-t border-line overflow-hidden"
     >
-      <div className="mx-auto max-w-[1320px] px-6">
+      <div className="mx-auto max-w-[1320px] px-4 sm:px-6">
         <Reveal>
           <div className="max-w-[68ch]">
-            <h2 className="text-fore text-[36px] md:text-[54px] leading-[1.06] tracking-[-0.028em] font-medium [text-wrap:balance]">
+            <h2 className="text-fore text-[28px] sm:text-[36px] md:text-[48px] lg:text-[54px] leading-[1.06] tracking-[-0.028em] font-medium [text-wrap:balance]">
               Scripted scenarios.
               <br />
               <span className="text-mute">Reusable, deterministic.</span>
             </h2>
             <p className="mt-6 text-soft text-[16.5px] leading-[1.6] [text-wrap:pretty]">
               Chain airdrops, time warps, snapshots, and transaction sends into a
-              workflow. Run the same sequence against any fork of any session.
+              workflow. Run the same sequence against any fork of any sandbox.
             </p>
           </div>
         </Reveal>
@@ -96,7 +96,7 @@ export function Workflow() {
               },
               {
                 k: 'offline',
-                v: 'Once cached, every session runs without an RPC call.',
+                v: 'Once cached, every sandbox runs without an RPC call.',
               },
             ].map((c) => (
               <div key={c.k} className="border-t border-line pt-6">

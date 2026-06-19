@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative pt-28 pb-28 md:pt-36 md:pb-40 overflow-hidden"
+      className="relative pt-24 pb-20 md:pt-36 md:pb-40 overflow-hidden"
     >
       <div className="hero-orb" />
       <div className="hero-grid" />
@@ -16,20 +16,20 @@ export function Hero() {
       <div className="accent-glow absolute inset-x-0 top-0 h-[560px] pointer-events-none" />
       <HeroParticles />
 
-      <div className="relative mx-auto max-w-[1320px] px-6">
-        <div className="grid lg:grid-cols-[1.05fr_1.12fr] gap-12 lg:gap-16 items-center">
+      <div className="relative mx-auto max-w-[1320px] px-4 sm:px-6">
+        <div className="grid lg:grid-cols-[1.05fr_1.12fr] gap-10 lg:gap-16 items-center">
           <div className="lg:pt-2">
             <Reveal>
-              <h1 className="text-fore text-[46px] md:text-[68px] leading-[1.02] tracking-[-0.028em] font-medium [text-wrap:balance]">
+              <h1 className="text-fore text-[34px] sm:text-[42px] md:text-[58px] lg:text-[68px] leading-[1.04] tracking-[-0.028em] font-medium [text-wrap:balance]">
                 Lightweight Solana mainnet
                 <br />
                 <span className="text-mute">on your laptop.</span>
               </h1>
             </Reveal>
             <Reveal delay={0.12}>
-              <p className="mt-7 max-w-[54ch] text-soft text-[17.5px] leading-[1.55] [text-wrap:pretty]">
-                Clone any Solana program into a per-session SVM sandbox. Patch
-                PDA state, simulate transactions, publish a local JSON-RPC
+              <p className="mt-5 sm:mt-7 max-w-[54ch] text-soft text-[15.5px] sm:text-[17.5px] leading-[1.55] [text-wrap:pretty]">
+                Clone any Solana program into a local SVM sandbox. Patch PDA
+                state, simulate transactions, publish a local JSON-RPC
                 endpoint.
               </p>
             </Reveal>
@@ -37,7 +37,7 @@ export function Hero() {
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <a
                   href={DOWNLOAD_URL}
-                  className="group inline-flex items-center gap-2 h-[46px] px-5 rounded-[10px] bg-accent text-ink font-medium text-[14.5px] hover:bg-[#6e92ff] transition-all active:translate-y-[1px] focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-ink shadow-[0_0_0_1px_rgba(93,131,255,0.5),0_18px_50px_-14px_rgba(93,131,255,0.55)]"
+                  className="group inline-flex items-center gap-2 h-[46px] px-5 rounded-[10px] bg-fore text-ink font-medium text-[14.5px] hover:bg-[#f4f6fb] transition-all active:translate-y-[1px] focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-ink shadow-[inset_0_1px_0_rgba(255,255,255,0.5),0_22px_40px_-22px_rgba(0,0,0,0.6)]"
                 >
                   Download for macOS
                   <ArrowRight
@@ -61,8 +61,8 @@ export function Hero() {
               </div>
             </Reveal>
             <Reveal delay={0.24}>
-              <div className="mt-12 grid grid-cols-3 gap-4 max-w-[440px]">
-                <Stat k="0.84s" v="ELF cached" />
+              <div className="mt-10 sm:mt-12 grid grid-cols-3 gap-3 sm:gap-4 max-w-[440px]">
+                <Stat k="0.84s" v="Program cached" />
                 <Stat k="47" v="Accounts hydrated" />
                 <Stat k="24" v="RPC methods" />
               </div>

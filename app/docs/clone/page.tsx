@@ -18,7 +18,7 @@ export default function Clone() {
       <H2 id="what">What gets cloned</H2>
       <Bullets
         items={[
-          <>The program <Mono>ELF</Mono> binary, exactly as deployed on mainnet.</>,
+          <>The program <Mono>Program</Mono> binary, exactly as deployed on mainnet.</>,
           <>The Anchor <Mono>IDL</Mono> if one is registered on-chain.</>,
           <>Account <Mono>data</Mono>, <Mono>lamports</Mono>, <Mono>owner</Mono>, <Mono>rent_epoch</Mono>, and <Mono>executable</Mono> flag for every requested address.</>,
           <>Transitive closure: PDAs, ATAs, lookup tables, oracle accounts you mark for follow.</>,

@@ -12,7 +12,7 @@ export default function CloneUi() {
       <H1>Clone</H1>
       <Lead>
         Bring on-chain programs and their account graph into the local SVM sandbox
-        through the desktop UI. ELF, IDL, transitive accounts  -  all driven from
+        through the desktop UI. Program, IDL, transitive accounts  -  all driven from
         the sidebar.
       </Lead>
 
@@ -20,7 +20,7 @@ export default function CloneUi() {
       <P>
         In the project sidebar, expand <Mono>PROGRAMS</Mono> and click the{' '}
         <Mono>+</Mono>. Paste a program id, pick the source RPC, optionally pin
-        a slot, and confirm. The ELF and any registered Anchor IDL stream in
+        a slot, and confirm. The Program and any registered Anchor IDL stream in
         while Relay caches the blob under the project root.
       </P>
       <Shot
