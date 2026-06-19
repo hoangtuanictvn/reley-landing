@@ -1,7 +1,7 @@
 import { Bullets, H1, H2, Lead, Mono, P, Pre } from '../prose'
 import { Pager } from '../pager'
 
-export const metadata = { title: 'Architecture · Relay docs' }
+export const metadata = { title: 'Architecture · Reley docs' }
 
 export default function Arch() {
   return (
@@ -11,7 +11,7 @@ export default function Arch() {
       </div>
       <H1>Architecture</H1>
       <Lead>
-        Relay is a monorepo: a shared schema package, a headless core engine,
+        Reley is a monorepo: a shared schema package, a headless core engine,
         a Commander CLI, and an Electron + React shell. Every feature flows
         through one RPC seam.
       </Lead>

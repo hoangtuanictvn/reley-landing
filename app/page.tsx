@@ -7,7 +7,7 @@ import { Trust } from './components/trust'
 import { UseCase } from './components/usecase'
 import { Workflow } from './components/workflow'
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://relay.dev'
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://reley.xyz'
 
 const JSON_LD = {
   '@context': 'https://schema.org',
@@ -15,7 +15,7 @@ const JSON_LD = {
     {
       '@type': 'SoftwareApplication',
       '@id': `${SITE}/#app`,
-      name: 'Relay',
+      name: 'Reley',
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'macOS',
       description:
@@ -28,15 +28,15 @@ const JSON_LD = {
     {
       '@type': 'Organization',
       '@id': `${SITE}/#org`,
-      name: 'Relay',
+      name: 'Reley',
       url: SITE,
       logo: `${SITE}/logo-mark.svg`,
-      sameAs: ['https://github.com/hoangtuanictvn/relay'],
+      sameAs: ['https://github.com/hoangtuanictvn/reley'],
     },
     {
       '@type': 'WebSite',
       '@id': `${SITE}/#site`,
-      name: 'Relay',
+      name: 'Reley',
       url: SITE,
       publisher: { '@id': `${SITE}/#org` },
     },

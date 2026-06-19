@@ -6,8 +6,8 @@ import { Reveal } from '../components/reveal'
 import { DOWNLOAD_URLS, type Platform } from '../lib/links'
 
 export const metadata: Metadata = {
-  title: 'Download · Relay',
-  description: 'Get the Relay desktop app. macOS today, Windows and Linux next.',
+  title: 'Download · Reley',
+  description: 'Get the Reley desktop app. macOS today, Windows and Linux next.',
 }
 
 type Build = {
@@ -163,11 +163,11 @@ export default function DownloadPage() {
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
-                  href="https://github.com/hoangtuanictvn/relay"
+                  href="https://github.com/hoangtuanictvn/reley"
                   className="inline-flex items-center gap-2 h-[40px] px-4 rounded-[9px] border border-line bg-surface-1 text-fore font-mono text-[13px] hover:border-line-strong transition-colors"
                 >
                   <GithubLogo size={15} weight="regular" />
-                  hoangtuanictvn/relay
+                  hoangtuanictvn/reley
                 </a>
                 <a
                   href="/docs/install"

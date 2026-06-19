@@ -26,7 +26,7 @@ export function UseCase() {
                   to exercise is the one only that key can call.
                 </p>
                 <p>
-                  Relay clones the pool, the vaults, the oracle, every bin array,
+                  Reley clones the pool, the vaults, the oracle, every bin array,
                   every mint. Then it patches{' '}
                   <span className="font-mono text-fore">pool.admin</span> to your
                   local wallet. The CPI tree runs. You see compute, logs, and
@@ -47,7 +47,7 @@ export function UseCase() {
                 <CodeLine
                   tokens={[
                     { t: '$ ', c: 'p' },
-                    { t: 'relay', c: 'cmd' },
+                    { t: 'reley', c: 'cmd' },
                     { t: ' account add ', c: 'arg' },
                     { t: '<pool_pda>', c: 'kw' },
                     { t: ' --program ', c: 'flag' },
@@ -79,7 +79,7 @@ export function UseCase() {
                 <CodeLine
                   tokens={[
                     { t: '$ ', c: 'p' },
-                    { t: 'relay', c: 'cmd' },
+                    { t: 'reley', c: 'cmd' },
                     { t: ' patch ', c: 'arg' },
                     { t: 'pool', c: 'kw' },
                     { t: ' --set ', c: 'flag' },
@@ -113,7 +113,7 @@ export function UseCase() {
                 <CodeLine
                   tokens={[
                     { t: '$ ', c: 'p' },
-                    { t: 'relay', c: 'cmd' },
+                    { t: 'reley', c: 'cmd' },
                     { t: ' tx send ', c: 'arg' },
                     { t: '--ix ', c: 'flag' },
                     { t: 'UserProg::do_admin_thing', c: 'kw' },

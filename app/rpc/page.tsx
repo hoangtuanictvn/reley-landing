@@ -5,7 +5,7 @@ import { CTA } from '../components/cta'
 import { Reveal } from '../components/reveal'
 
 export const metadata: Metadata = {
-  title: 'RPC server · Relay',
+  title: 'RPC server · Reley',
   description:
     'Publish your sandbox as a Solana-compatible JSON-RPC endpoint. Wire-compatible with @solana/web3.js, Anchor, Phantom dev mode.',
 }
@@ -68,7 +68,7 @@ export default function RpcPage() {
                 Connect a client.
               </h2>
               <p className="mt-4 text-soft text-[15.5px] max-w-[50ch] leading-[1.6]">
-                Anything that speaks Solana speaks Relay. Drop the sandbox URL
+                Anything that speaks Solana speaks Reley. Drop the sandbox URL
                 in instead of mainnet.
               </p>
               <ul className="mt-8 space-y-3 max-w-[42ch]">

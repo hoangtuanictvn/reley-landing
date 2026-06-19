@@ -5,7 +5,7 @@ import { CTA } from '../components/cta'
 import { Reveal } from '../components/reveal'
 
 export const metadata: Metadata = {
-  title: 'Patch · Relay',
+  title: 'Patch · Reley',
   description:
     'Mutate any field on any cloned account. IDL-aware for Anchor, native layouts for SPL Token, raw splice for everything else.',
 }
@@ -87,7 +87,7 @@ export default function PatchPage() {
           </Reveal>
           <Reveal delay={0.05}>
             <p className="mt-4 text-soft text-[15.5px] max-w-[60ch] leading-[1.6]">
-              Relay decodes against the IDL when one exists. Falls back to
+              Reley decodes against the IDL when one exists. Falls back to
               native layout for SPL programs. Drops to raw byte editing when
               there is no map.
             </p>

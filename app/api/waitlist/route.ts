@@ -50,11 +50,11 @@ export async function POST(req: Request) {
           await resend.emails.send({
             from: FROM,
             to: email,
-            subject: 'You are on the Relay Cloud waitlist',
+            subject: 'You are on the Reley Cloud waitlist',
             text:
               'Thanks for signing up. We will email you when the next wave opens.\n\n' +
               'No marketing spam. Unsubscribe any time.\n\n' +
-              'Relay',
+              'Reley',
           })
         } catch (e) {
           // Confirmation is best-effort - signup itself already succeeded.

@@ -9,7 +9,7 @@ export function Brand({ className }: { className?: string }) {
       )}
     >
       <RelayMark />
-      <span className="text-fore">relay</span>
+      <span className="text-fore">reley</span>
     </span>
   )
 }

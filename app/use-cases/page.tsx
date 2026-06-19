@@ -7,9 +7,9 @@ import { UseCases } from '../components/usecases'
 import { Reveal } from '../components/reveal'
 
 export const metadata: Metadata = {
-  title: 'Use cases · Relay',
+  title: 'Use cases · Reley',
   description:
-    'What protocol developers, integrators, and security researchers build with Relay.',
+    'What protocol developers, integrators, and security researchers build with Reley.',
 }
 
 export default function UseCasesPage() {
@@ -27,7 +27,7 @@ export default function UseCasesPage() {
           </Reveal>
           <Reveal delay={0.05}>
             <h1 className="mt-4 text-fore text-[44px] md:text-[68px] leading-[1.02] tracking-[-0.028em] font-medium max-w-[22ch] [text-wrap:balance]">
-              What people build with Relay.
+              What people build with Reley.
             </h1>
           </Reveal>
           <Reveal delay={0.1}>

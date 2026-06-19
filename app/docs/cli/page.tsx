@@ -1,7 +1,7 @@
 import { Callout, H1, H2, Lead, Mono, P, Pre } from '../prose'
 import { Pager } from '../pager'
 
-export const metadata = { title: 'CLI · Relay docs' }
+export const metadata = { title: 'CLI · Reley docs' }
 
 export default function Cli() {
   return (
@@ -14,7 +14,7 @@ export default function Cli() {
         The CLI runs the same dispatcher as the desktop app, in-process.
         Anything the GUI does, the CLI can script. Run via{' '}
         <Mono>pnpm cli &lt;command&gt;</Mono> from the repo, or the built{' '}
-        <Mono>relay</Mono> binary.
+        <Mono>reley</Mono> binary.
       </Lead>
 
       <H2 id="env">Environment</H2>

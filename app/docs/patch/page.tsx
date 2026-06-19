@@ -1,7 +1,7 @@
 import { Bullets, Callout, H1, H2, Lead, Mono, P, Pre } from '../prose'
 import { Pager } from '../pager'
 
-export const metadata = { title: 'Patch · Relay docs' }
+export const metadata = { title: 'Patch · Reley docs' }
 
 export default function Patch() {
   return (
@@ -43,12 +43,12 @@ pnpm cli patch set vault.balance --session <sid> \\
 
       <H2 id="idl">IDL field example</H2>
       <P>
-        Patch a Meteora DLMM pool admin to your local wallet. Relay decodes the
+        Patch a Meteora DLMM pool admin to your local wallet. Reley decodes the
         account, sets <Mono>admin</Mono> to the new pubkey, re-encodes, and
         writes the new buffer back to the SVM sandbox account store.
       </P>
       <Pre label="output">
-{`$ relay patch pool --set admin=$W
+{`$ reley patch pool --set admin=$W
   using IDL    meteora_dlmm@0.30.1
   field        admin: PublicKey
   encoded      32B
@@ -57,7 +57,7 @@ pnpm cli patch set vault.balance --session <sid> \\
 
       <H2 id="native">Native layout example</H2>
       <Pre label="output">
-{`$ relay patch mint --set mintAuthority=$W --account <USDC>
+{`$ reley patch mint --set mintAuthority=$W --account <USDC>
   using layout spl_token::Mint  v1
   field        mintAuthority: COption<Pubkey>
 ✓ USDC mintable to wallet $W in session 'main'`}

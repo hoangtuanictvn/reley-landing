@@ -1,7 +1,7 @@
 import { Bullets, Callout, H1, H2, Lead, Mono, P, Pre } from '../prose'
 import { Pager } from '../pager'
 
-export const metadata = { title: 'Install · Relay docs' }
+export const metadata = { title: 'Install · Reley docs' }
 
 export default function Install() {
   return (
@@ -11,7 +11,7 @@ export default function Install() {
       </div>
       <H1>Install</H1>
       <Lead>
-        Relay ships as an Electron desktop app and a Node CLI. Both link against
+        Reley ships as an Electron desktop app and a Node CLI. Both link against
         the same core engine, so anything you can do in the GUI you can script.
       </Lead>
 
@@ -28,8 +28,8 @@ export default function Install() {
       <H2 id="desktop">Desktop app</H2>
       <P>Download the latest installer from the releases page. macOS is the only supported platform today. Windows and Linux builds land next.</P>
       <Pre label="release/">
-{`Relay-1.x.x-arm64.dmg    macOS  (Apple Silicon)
-Relay-1.x.x-x64.dmg      macOS  (Intel)`}
+{`Reley-1.x.x-arm64.dmg    macOS  (Apple Silicon)
+Reley-1.x.x-x64.dmg      macOS  (Intel)`}
       </Pre>
       <Callout>
         Windows and Linux builds are coming. The engine is platform-agnostic;
@@ -39,8 +39,8 @@ Relay-1.x.x-x64.dmg      macOS  (Intel)`}
 
       <H2 id="source">From source</H2>
       <Pre label="terminal">
-{`git clone https://github.com/hoangtuanictvn/relay
-cd relay/relay-app
+{`git clone https://github.com/hoangtuanictvn/reley
+cd reley/relay-app
 pnpm install
 pnpm build
 

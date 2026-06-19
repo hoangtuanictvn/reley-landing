@@ -1,7 +1,7 @@
 import { Bullets, Callout, H1, H2, Lead, Mono, P, Pre } from '../prose'
 import { Pager } from '../pager'
 
-export const metadata = { title: 'Replay · Relay docs' }
+export const metadata = { title: 'Replay · Reley docs' }
 
 export default function Replay() {
   return (
@@ -11,7 +11,7 @@ export default function Replay() {
       </div>
       <H1>Replay</H1>
       <Lead>
-        Take any mainnet transaction by signature and run it locally. Relay
+        Take any mainnet transaction by signature and run it locally. Reley
         fetches every touched account at <Mono>slot - 1</Mono>, executes the
         transaction in SVM sandbox, then diffs the local result against the
         on-chain one.

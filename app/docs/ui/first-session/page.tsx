@@ -1,7 +1,7 @@
 import { Callout, H1, H2, Lead, Mono, P, Shot } from '../../prose'
 import { Pager } from '../../pager'
 
-export const metadata = { title: 'First session (UI) · Relay docs' }
+export const metadata = { title: 'First session (UI) · Reley docs' }
 
 export default function FirstSessionUi() {
   return (
@@ -18,7 +18,7 @@ export default function FirstSessionUi() {
 
       <H2 id="launch">Launch + create a project</H2>
       <P>
-        Open Relay. The Welcome screen offers <Mono>Open project…</Mono>,{' '}
+        Open Reley. The Welcome screen offers <Mono>Open project…</Mono>,{' '}
         <Mono>New project…</Mono>, recent projects, and use-case shortcuts.
         Click <Mono>New project…</Mono>, pick a folder, name it, choose an RPC.
       </P>
@@ -32,7 +32,7 @@ export default function FirstSessionUi() {
       <P>
         Inside the project, expand <Mono>PROGRAMS</Mono> in the sidebar, hit{' '}
         <Mono>+</Mono>, paste a program id (e.g. SPL Memo:{' '}
-        <Mono>MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr</Mono>). Relay pulls
+        <Mono>MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr</Mono>). Reley pulls
         the Program and any registered Anchor IDL.
       </P>
       <Shot

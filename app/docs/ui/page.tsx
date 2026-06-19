@@ -1,7 +1,7 @@
 import { Callout, H1, H2, H3, Lead, Mono, P, Shot } from '../prose'
 import { Pager } from '../pager'
 
-export const metadata = { title: 'Desktop UI · Relay docs' }
+export const metadata = { title: 'Desktop UI · Reley docs' }
 
 export default function Ui() {
   return (
@@ -11,7 +11,7 @@ export default function Ui() {
       </div>
       <H1>Desktop UI</H1>
       <Lead>
-        Every Relay project opens in its own window. The shell stays the same:
+        Every Reley project opens in its own window. The shell stays the same:
         left sidebar for project assets, center pane for the active panel, right
         rail for shortcuts and the inspector. Everything below talks to the
         same dispatcher the CLI does  -  no GUI-only state.
@@ -19,7 +19,7 @@ export default function Ui() {
 
       <H2 id="welcome">Welcome</H2>
       <P>
-        Launching Relay drops you on the Welcome screen. Open or create a
+        Launching Reley drops you on the Welcome screen. Open or create a
         project, pick a recent one, or jump straight into a guided tour from
         the use-case cards.
       </P>

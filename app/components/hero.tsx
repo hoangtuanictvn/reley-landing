@@ -85,7 +85,7 @@ export function Hero() {
                         <span className="h-[10px] w-[10px] rounded-full bg-[#2a3142]" />
                       </div>
                       <span className="ml-3 font-mono text-[11px] text-mute">
-                        relay · pamm · env/current-local-clean
+                        reley · pamm · env/current-local-clean
                       </span>
                       <span className="ml-auto inline-flex items-center gap-1.5 font-mono text-[10.5px] text-mute uppercase tracking-[0.18em]">
                         <span className="relative flex h-1.5 w-1.5">
@@ -97,7 +97,7 @@ export function Hero() {
                     </div>
                     <img
                       src="/docs/ui/workflow-detail.png"
-                      alt="Relay app showing a step-by-step test running on a local copy of a Solana app"
+                      alt="Reley app showing a step-by-step test running on a local copy of a Solana app"
                       loading="eager"
                       className="block w-full h-auto"
                     />

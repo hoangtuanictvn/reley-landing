@@ -1,7 +1,7 @@
 import { Callout, H1, H2, Lead, Mono, P, Pre } from '../prose'
 import { Pager } from '../pager'
 
-export const metadata = { title: 'First session · Relay docs' }
+export const metadata = { title: 'First session · Reley docs' }
 
 export default function FirstSession() {
   return (
@@ -27,7 +27,7 @@ export default function FirstSession() {
 
       <H2 id="clone">Clone a program</H2>
       <P>
-        Add the SPL Memo program by pubkey. Relay fetches the Program, resolves the
+        Add the SPL Memo program by pubkey. Reley fetches the Program, resolves the
         IDL if one is registered, and caches the blob locally.
       </P>
       <Pre label="terminal">

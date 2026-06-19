@@ -41,11 +41,11 @@ export function Footer() {
               who need to test what mainnet won&apos;t let them.
             </p>
             <a
-              href="https://github.com/hoangtuanictvn/relay"
+              href="https://github.com/hoangtuanictvn/reley"
               className="mt-6 inline-flex items-center gap-2 font-mono text-[12.5px] text-soft hover:text-fore transition-colors"
             >
               <GithubLogo size={15} weight="regular" />
-              hoangtuanictvn/relay
+              hoangtuanictvn/reley
             </a>
           </div>
           {LINKS.map((col) => (

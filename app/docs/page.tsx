@@ -3,7 +3,7 @@ import { ArrowRight } from '@phosphor-icons/react/dist/ssr'
 import { Bullets, H1, H2, Lead, Mono, P } from './prose'
 import { Pager } from './pager'
 
-export const metadata = { title: 'Docs · Relay' }
+export const metadata = { title: 'Docs · Reley' }
 
 export default function DocsIndex() {
   return (
@@ -13,7 +13,7 @@ export default function DocsIndex() {
       </div>
       <H1>Overview</H1>
       <Lead>
-        Relay is a per-project, per-session SVM sandbox loaded with real
+        Reley is a per-project, per-session SVM sandbox loaded with real
         on-chain Solana programs. Clone, patch, replay, and publish a session
         as a Solana-compatible JSON-RPC endpoint.
       </Lead>
@@ -50,7 +50,7 @@ export default function DocsIndex() {
       </P>
       <P>
         If your program CPIs into a permissioned protocol and you need the
-        admin path, Relay clones the protocol, patches the admin, and lets you
+        admin path, Reley clones the protocol, patches the admin, and lets you
         run the CPI tree locally.
       </P>
 

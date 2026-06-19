@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://relay.dev'
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://reley.xyz'
 
 const ROUTES: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[0]['changeFrequency'] }[] = [
   { path: '/', priority: 1.0, changeFrequency: 'weekly' },

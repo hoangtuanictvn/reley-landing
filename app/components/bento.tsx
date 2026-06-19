@@ -73,7 +73,7 @@ export function Bento() {
               />
               <div className="px-6 md:px-7 pb-6">
                 <div className="rounded-[10px] border border-line bg-ink/60 p-4 font-mono text-[12.5px]">
-                  <CodeLine tokens={[{ t: '$ ', c: 'p' }, { t: 'relay', c: 'cmd' }, { t: ' clone ', c: 'arg' }, { t: 'METEORA_DLMM', c: 'kw' }]} />
+                  <CodeLine tokens={[{ t: '$ ', c: 'p' }, { t: 'reley', c: 'cmd' }, { t: ' clone ', c: 'arg' }, { t: 'METEORA_DLMM', c: 'kw' }]} />
                   <CodeLine tokens={[{ t: '  resolving deps  ', c: 'op' }, { t: '47 accounts', c: 'num' }, { t: '  ', c: 'op' }, { t: '12 PDAs', c: 'num' }]} />
                   <CodeLine tokens={[{ t: '  hydrate @ slot ', c: 'op' }, { t: '348,201,118', c: 'num' }]} />
                   <CodeLine tokens={[{ t: '✓', c: 'p' }, { t: ' 0.84s', c: 'num' }, { t: '  Program cached  ', c: 'op' }, { t: 'IDL: anchor v0.30.1', c: 'fn' }]} />

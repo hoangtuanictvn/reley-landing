@@ -1,7 +1,7 @@
 import { Bullets, Callout, H1, H2, Lead, Mono, P, Pre, Shot } from '../../prose'
 import { Pager } from '../../pager'
 
-export const metadata = { title: 'RPC server (UI) · Relay docs' }
+export const metadata = { title: 'RPC server (UI) · Reley docs' }
 
 export default function RpcUi() {
   return (
@@ -20,7 +20,7 @@ export default function RpcUi() {
       <P>
         Open the right rail Inspector, switch to the <Mono>Details</Mono> tab
         for the active session, find the <Mono>RPC endpoint</Mono> card, hit{' '}
-        <Mono>Start</Mono>. Relay binds an HTTP listener and surfaces the URL.
+        <Mono>Start</Mono>. Reley binds an HTTP listener and surfaces the URL.
       </P>
       <Pre label="endpoint">
 {`http://127.0.0.1:8899/session/<id>`}

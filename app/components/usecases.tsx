@@ -84,7 +84,7 @@ export function UseCases({ compact = false }: { compact?: boolean }) {
             </Reveal>
             <Reveal delay={0.05}>
               <h2 className="mt-4 text-fore text-[28px] sm:text-[36px] md:text-[48px] lg:text-[54px] leading-[1.04] tracking-[-0.028em] font-medium max-w-[22ch] [text-wrap:balance]">
-                What people build with Relay.
+                What people build with Reley.
               </h2>
             </Reveal>
             <Reveal delay={0.1}>

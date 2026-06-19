@@ -6,9 +6,9 @@ import { Reveal } from '../components/reveal'
 import { Waitlist } from '../components/waitlist'
 
 export const metadata: Metadata = {
-  title: 'Relay Cloud · Waitlist',
+  title: 'Reley Cloud · Waitlist',
   description:
-    'Shared, persistent Relay sandboxes in the cloud. Team-wide replays, snapshots, and JSON-RPC URLs your CI can hit. Join the waitlist.',
+    'Shared, persistent Reley sandboxes in the cloud. Team-wide replays, snapshots, and JSON-RPC URLs your CI can hit. Join the waitlist.',
 }
 
 const FEATURES = [
@@ -47,7 +47,7 @@ export default function CloudPage() {
         <div className="relative mx-auto max-w-[1320px] px-4 sm:px-6">
           <Reveal>
             <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-accent-deep">
-              Relay Cloud
+              Reley Cloud
             </div>
           </Reveal>
           <Reveal delay={0.05}>
@@ -136,7 +136,7 @@ export default function CloudPage() {
                 <p className="mt-4 text-soft text-[15.5px] max-w-[50ch] leading-[1.6]">
                   Protocol teams running integration tests against another team&apos;s
                   program. Security researchers replaying mainnet incidents.
-                  Anyone whose laptop already has 6 Relay projects open.
+                  Anyone whose laptop already has 6 Reley projects open.
                 </p>
               </div>
             </Reveal>

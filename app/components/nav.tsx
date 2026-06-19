@@ -59,7 +59,7 @@ export function Nav() {
       <div className="relative mx-auto max-w-[1320px] h-[64px] px-4 sm:px-6 flex items-center justify-between gap-3">
         <Link
           href="/"
-          aria-label="Relay home"
+          aria-label="Reley home"
           className="flex items-center rounded-[6px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-ink shrink-0"
         >
           <Brand />
@@ -93,7 +93,7 @@ export function Nav() {
             Signup
           </Link>
           <a
-            href="https://github.com/hoangtuanictvn/relay"
+            href="https://github.com/hoangtuanictvn/reley"
             aria-label="GitHub repository"
             className="hidden sm:inline-flex items-center justify-center h-[34px] w-[34px] rounded-[8px] text-soft hover:text-fore hover:bg-surface-1 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60"
           >
@@ -146,7 +146,7 @@ export function Nav() {
                 Signup
               </Link>
               <a
-                href="https://github.com/hoangtuanictvn/relay"
+                href="https://github.com/hoangtuanictvn/reley"
                 className="inline-flex items-center justify-center gap-2 h-[44px] px-5 rounded-[10px] border border-line text-fore font-mono text-[13px] hover:bg-surface-1 transition-colors"
               >
                 <GithubLogo size={15} weight="regular" />

@@ -1,7 +1,7 @@
 import { Bullets, Callout, H1, H2, Lead, Mono, P, Pre } from '../prose'
 import { Pager } from '../pager'
 
-export const metadata = { title: 'Clone · Relay docs' }
+export const metadata = { title: 'Clone · Reley docs' }
 
 export default function Clone() {
   return (

@@ -1,7 +1,7 @@
 import { Bullets, Callout, H1, H2, Lead, Mono, P, Pre } from '../prose'
 import { Pager } from '../pager'
 
-export const metadata = { title: 'RPC server · Relay docs' }
+export const metadata = { title: 'RPC server · Reley docs' }
 
 export default function Rpc() {
   return (
@@ -14,7 +14,7 @@ export default function Rpc() {
         Promote any session to a Solana-compatible JSON-RPC endpoint at{' '}
         <Mono>http://localhost:8899/session/&lt;id&gt;</Mono>. The wire shape
         matches Solana RPC byte-for-byte. Anything that speaks Solana will
-        speak Relay.
+        speak Reley.
       </Lead>
 
       <H2 id="start">Start the server</H2>

@@ -1,7 +1,7 @@
 import { Bullets, Callout, H1, H2, Lead, Mono, P, Shot } from '../../prose'
 import { Pager } from '../../pager'
 
-export const metadata = { title: 'Clone (UI) · Relay docs' }
+export const metadata = { title: 'Clone (UI) · Reley docs' }
 
 export default function CloneUi() {
   return (
@@ -21,7 +21,7 @@ export default function CloneUi() {
         In the project sidebar, expand <Mono>PROGRAMS</Mono> and click the{' '}
         <Mono>+</Mono>. Paste a program id, pick the source RPC, optionally pin
         a slot, and confirm. The Program and any registered Anchor IDL stream in
-        while Relay caches the blob under the project root.
+        while Reley caches the blob under the project root.
       </P>
       <Shot
         src="/docs/ui/project-shell.png"
@@ -40,13 +40,13 @@ export default function CloneUi() {
         items={[
           <>Anchor PDAs decode against the program&apos;s IDL automatically.</>,
           <>Native (SPL Token, Token-2022, lookup table) accounts are decoded against built-in layouts.</>,
-          <>Unknown layouts still clone  -  Relay stores the raw buffer and shows it as hex.</>,
+          <>Unknown layouts still clone  -  Reley stores the raw buffer and shows it as hex.</>,
         ]}
       />
 
       <H2 id="auto-clone">Auto-clone during a tx</H2>
       <P>
-        When you build or replay a tx that touches an account Relay hasn&apos;t
+        When you build or replay a tx that touches an account Reley hasn&apos;t
         seen, the runtime asks the project&apos;s RPC for it and caches the
         result. Toggle this in <Mono>Settings → Auto-clone</Mono> if you want
         every account explicit.

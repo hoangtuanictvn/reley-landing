@@ -1,7 +1,7 @@
 import { Bullets, Callout, H1, H2, Lead, Mono, P, Shot } from '../../prose'
 import { Pager } from '../../pager'
 
-export const metadata = { title: 'Patch (UI) · Relay docs' }
+export const metadata = { title: 'Patch (UI) · Reley docs' }
 
 export default function PatchUi() {
   return (
