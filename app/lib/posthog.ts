@@ -14,7 +14,10 @@ export function getPosthog(): PostHog | null {
     posthog.init(key, {
       api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST ?? 'https://us.i.posthog.com',
       person_profiles: 'identified_only',
-      capture_pageview: false, // wired manually via PosthogProvider
+      // 'history_change' makes PostHog auto-fire $pageview on SPA route
+      // changes (App Router uses history.pushState). The provider also fires
+      // a manual $pageview as a belt-and-suspenders backup.
+      capture_pageview: 'history_change',
       capture_pageleave: true,
       autocapture: true,
       persistence: 'localStorage+cookie',
@@ -24,6 +27,10 @@ export function getPosthog(): PostHog | null {
         maskTextSelector: '[data-ph-mask]',
       },
       loaded: (ph) => {
+        // Fire the very first pageview immediately so the onboarding
+        // check at app.posthog.com sees the event without waiting on a
+        // history change.
+        ph.capture('$pageview')
         if (process.env.NODE_ENV !== 'production') ph.debug(false)
       },
     })
