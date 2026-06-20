@@ -1,5 +1,7 @@
+import { Suspense } from 'react'
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
+import { PosthogProvider } from './components/posthog-provider'
 import './globals.css'
 
 const geistSans = Geist({ subsets: ['latin'], variable: '--font-geist-sans', display: 'swap' })
@@ -90,6 +92,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
         <div className="grain" />
+        <Suspense fallback={null}>
+          <PosthogProvider />
+        </Suspense>
         {children}
       </body>
     </html>

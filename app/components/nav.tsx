@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { GithubLogo, List, X } from '@phosphor-icons/react/dist/ssr'
 import { Brand } from './brand'
 import { clsx } from './clsx'
+import { capture } from '../lib/posthog'
 
 const PRIMARY = [
   { label: 'Sandbox', href: '/#sandbox' },
@@ -87,6 +88,7 @@ export function Nav() {
         <div className="flex items-center gap-2">
           <Link
             href="/waitlist"
+            onClick={() => capture('cta_click', { id: 'nav_signup' })}
             className="inline-flex items-center gap-2 h-[34px] px-4 rounded-[8px] bg-accent text-white font-medium font-mono text-[12.5px] hover:bg-[#7295ff] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-ink active:translate-y-[1px]"
             aria-label="Sign up for the cloud waitlist"
           >
@@ -141,6 +143,7 @@ export function Nav() {
             <div className="mt-6 flex flex-col gap-3">
               <Link
                 href="/waitlist"
+                onClick={() => capture('cta_click', { id: 'mobile_signup' })}
                 className="inline-flex items-center justify-center gap-2 h-[44px] px-5 rounded-[10px] bg-accent text-white font-medium text-[14.5px] hover:bg-[#7295ff] transition-colors"
               >
                 Signup

@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from 'react'
 import { ArrowRight, CheckCircle, Hourglass } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from './clsx'
+import { capture, identify } from '../lib/posthog'
 
 type Status =
   | { kind: 'idle' }
@@ -53,6 +54,7 @@ export function Waitlist({
       return
     }
     setStatus({ kind: 'submitting' })
+    capture('waitlist_submit', { source })
     try {
       const res = await fetch('/api/waitlist', {
         method: 'POST',
@@ -61,16 +63,22 @@ export function Waitlist({
       })
       const data = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string }
       if (res.ok && data.ok) {
+        identify(trimmed, { source, joined_at: new Date().toISOString() })
+        capture('waitlist_success', { source })
         setStatus({ kind: 'success' })
         setEmail('')
       } else if (res.status === 422) {
+        capture('waitlist_error', { source, reason: 'invalid_email' })
         setStatus({ kind: 'error', message: 'Enter a valid email.' })
       } else if (res.status === 503) {
+        capture('waitlist_error', { source, reason: 'not_active' })
         setStatus({ kind: 'error', message: 'Signup is not active yet. Try again soon.' })
       } else {
+        capture('waitlist_error', { source, reason: `http_${res.status}` })
         setStatus({ kind: 'error', message: 'Something broke on our end. Try again in a minute.' })
       }
     } catch {
+      capture('waitlist_error', { source, reason: 'network' })
       setStatus({ kind: 'error', message: 'Network error. Try again.' })
     }
   }
@@ -118,6 +126,7 @@ export function Waitlist({
           autoComplete="email"
           inputMode="email"
           placeholder="you@protocol.dev"
+          data-ph-mask
           value={email}
           onChange={(e) => {
             setEmail(e.target.value)
