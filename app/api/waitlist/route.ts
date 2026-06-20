@@ -1,10 +1,12 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
+import { waitlistConfirmEmail } from './email-template'
 
 const RESEND_KEY = process.env.RESEND_API_KEY
 const AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID
 const FROM = process.env.RESEND_FROM // optional confirmation sender
 const WEBHOOK = process.env.WAITLIST_WEBHOOK_URL // legacy / non-resend fallback
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.reley.xyz'
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
@@ -47,14 +49,20 @@ export async function POST(req: Request) {
       // Optional confirmation email.
       if (FROM) {
         try {
+          const tmpl = waitlistConfirmEmail({ site: SITE, email })
+          const unsubUrl = `${SITE}/api/unsubscribe?email=${encodeURIComponent(email)}`
           await resend.emails.send({
             from: FROM,
             to: email,
-            subject: 'You are on the Reley Cloud waitlist',
-            text:
-              'Thanks for signing up. We will email you when the next wave opens.\n\n' +
-              'No marketing spam. Unsubscribe any time.\n\n' +
-              'Reley',
+            subject: tmpl.subject,
+            html: tmpl.html,
+            text: tmpl.text,
+            // RFC 8058 one-click unsubscribe (Gmail / Apple Mail show native
+            // Unsubscribe button when both headers are present).
+            headers: {
+              'List-Unsubscribe': `<${unsubUrl}>`,
+              'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click',
+            },
           })
         } catch (e) {
           // Confirmation is best-effort - signup itself already succeeded.

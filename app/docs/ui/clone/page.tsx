@@ -24,7 +24,7 @@ export default function CloneUi() {
         while Reley caches the blob under the project root.
       </P>
       <Shot
-        src="/docs/ui/project-shell.png"
+        src="/docs/ui/project-shell.webp"
         alt="Project shell with Programs sidebar group"
         caption="Sidebar  -  Programs group with add (+) action"
       />

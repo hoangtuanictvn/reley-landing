@@ -23,7 +23,7 @@ export default function FirstSessionUi() {
         Click <Mono>New project…</Mono>, pick a folder, name it, choose an RPC.
       </P>
       <Shot
-        src="/docs/ui/welcome.png"
+        src="/docs/ui/welcome.webp"
         alt="Welcome screen  -  open / new project, recent projects, use-case cards"
         caption="Welcome  -  pick a project or create one"
       />
@@ -36,7 +36,7 @@ export default function FirstSessionUi() {
         the Program and any registered Anchor IDL.
       </P>
       <Shot
-        src="/docs/ui/project-shell.png"
+        src="/docs/ui/project-shell.webp"
         alt="Project shell with sidebar groups expanded"
         caption="Project shell  -  sidebar drives everything"
       />
@@ -56,7 +56,7 @@ export default function FirstSessionUi() {
         commit; <Mono>Submit</Mono> lands the tx.
       </P>
       <Shot
-        src="/docs/ui/tx-builder.png"
+        src="/docs/ui/tx-builder.webp"
         alt="Tx Builder pane with program picker and Simulate/Submit actions"
         caption="Tx Builder  -  pick, fill, submit"
       />

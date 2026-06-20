@@ -96,7 +96,7 @@ export function Hero() {
                       </span>
                     </div>
                     <img
-                      src="/docs/ui/workflow-detail.png"
+                      src="/docs/ui/workflow-detail.webp"
                       alt="Reley app showing a step-by-step test running on a local copy of a Solana app"
                       loading="eager"
                       className="block w-full h-auto"

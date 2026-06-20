@@ -24,7 +24,7 @@ export default function PatchUi() {
         stage a new patch.
       </P>
       <Shot
-        src="/docs/ui/project-shell.png"
+        src="/docs/ui/project-shell.webp"
         alt="Patches sidebar group with Project and Sandbox scopes"
         caption="Sidebar  -  Patches with Project + Sandbox scopes"
       />

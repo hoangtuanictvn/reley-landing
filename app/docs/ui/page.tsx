@@ -24,7 +24,7 @@ export default function Ui() {
         the use-case cards.
       </P>
       <Shot
-        src="/docs/ui/welcome.png"
+        src="/docs/ui/welcome.webp"
         alt="Welcome screen showing Open / New project actions, recent projects, and use-case cards"
         caption="Welcome  -  entry point for projects"
       />
@@ -39,7 +39,7 @@ export default function Ui() {
         with <Mono>Just let me explore</Mono>.
       </P>
       <Shot
-        src="/docs/ui/project-shell.png"
+        src="/docs/ui/project-shell.webp"
         alt="Project shell with sidebar groups expanded and goal picker dismissed"
         caption="Project shell  -  sidebar + main pane"
       />
@@ -51,7 +51,7 @@ export default function Ui() {
         with the same icon or <Mono>Esc</Mono>.
       </P>
       <Shot
-        src="/docs/ui/help-panel.png"
+        src="/docs/ui/help-panel.webp"
         alt="Help panel docked on the right with project orientation copy and on-disk layout"
         caption="Help  -  orientation + on-disk layout"
       />
@@ -65,7 +65,7 @@ export default function Ui() {
         commit; <Mono>Submit</Mono> lands the tx in the active session.
       </P>
       <Shot
-        src="/docs/ui/tx-builder.png"
+        src="/docs/ui/tx-builder.webp"
         alt="Tx Builder pane with program picker, advanced signing/budget section, and Simulate/Submit actions"
         caption="Tx Builder  -  build, simulate, submit"
       />
@@ -83,12 +83,12 @@ export default function Ui() {
         notes, total CU, last run, and duration.
       </P>
       <Shot
-        src="/docs/ui/workflows-list.png"
+        src="/docs/ui/workflows-list.webp"
         alt="Sidebar with Workflows group expanded showing 8 workflows"
         caption="Workflows  -  grouped under Automations"
       />
       <Shot
-        src="/docs/ui/workflow-detail.png"
+        src="/docs/ui/workflow-detail.webp"
         alt="Workflow detail showing steps 1-9 with airdrop and reset-sandbox actions"
         caption="Workflow detail  -  steps run in order"
       />
@@ -102,7 +102,7 @@ export default function Ui() {
         UI chrome.
       </P>
       <Shot
-        src="/docs/ui/command-palette.png"
+        src="/docs/ui/command-palette.webp"
         alt="Command palette open with View, Workspace, and Command sections listed"
         caption="⌘K  -  palette"
       />

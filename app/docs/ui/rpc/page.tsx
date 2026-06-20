@@ -60,7 +60,7 @@ await connection.sendTransaction(tx, [payer])`}
         diff.
       </P>
       <Shot
-        src="/docs/ui/tx-builder.png"
+        src="/docs/ui/tx-builder.webp"
         alt="Tx Builder with history dock toggle"
         caption="History dock surfaces RPC-submitted txs alongside builder runs"
       />
