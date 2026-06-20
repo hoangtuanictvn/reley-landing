@@ -4,9 +4,19 @@ import { waitlistConfirmEmail } from './email-template'
 
 const RESEND_KEY = process.env.RESEND_API_KEY
 const AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID
-const FROM = process.env.RESEND_FROM // optional confirmation sender
+const RAW_FROM = process.env.RESEND_FROM // optional confirmation sender
 const WEBHOOK = process.env.WAITLIST_WEBHOOK_URL // legacy / non-resend fallback
 const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.reley.xyz'
+
+// Build the From header. If the env value is a bare email ("hi@x.dev"),
+// prepend a friendly display name so the inbox shows "Reley Newsletter"
+// instead of a raw address. If the value already contains "Name <addr>",
+// respect what the user set.
+const FROM = RAW_FROM
+  ? RAW_FROM.includes('<')
+    ? RAW_FROM
+    : `Reley Newsletter <${RAW_FROM.trim()}>`
+  : undefined
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
