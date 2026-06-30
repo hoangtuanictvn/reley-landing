@@ -13,6 +13,7 @@ const PRIMARY = [
   { label: 'Patch', href: '/patch' },
   { label: 'RPC', href: '/rpc' },
   { label: 'Use cases', href: '/use-cases' },
+  { label: 'Community', href: '/community' },
   { label: 'Download', href: '/download' },
   { label: 'Docs', href: '/docs' },
 ]
@@ -25,6 +26,7 @@ export function Nav() {
   const onRpc = path === '/rpc'
   const onCloud = path === '/waitlist'
   const onDownload = path === '/download'
+  const onCommunity = path === '/community' || path.startsWith('/community/')
   const onHome = path === '/'
 
   const [menuOpen, setMenuOpen] = useState(false)
@@ -50,6 +52,7 @@ export function Nav() {
     if (href === '/rpc') return onRpc
     if (href === '/waitlist') return onCloud
     if (href === '/download') return onDownload
+    if (href === '/community') return onCommunity
     if (href === '/#sandbox') return onHome
     return false
   }

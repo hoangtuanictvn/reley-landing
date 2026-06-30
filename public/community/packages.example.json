@@ -1,0 +1,105 @@
+{
+  "$schema": "https://reley.xyz/community/packages.schema.json",
+  "version": 1,
+  "updatedAt": "2026-06-27T00:00:00Z",
+  "categories": [
+    {
+      "id": "lending",
+      "title": "Lending & Borrow",
+      "description": "Money-market protocols, isolated lending, leverage.",
+      "order": 1
+    },
+    {
+      "id": "dex",
+      "title": "DEX",
+      "description": "AMMs, order books, aggregators.",
+      "order": 2
+    },
+    {
+      "id": "perps",
+      "title": "Perpetuals",
+      "description": "Perp DEXes, on-chain leverage venues.",
+      "order": 3
+    },
+    {
+      "id": "stablecoin",
+      "title": "Stablecoins",
+      "description": "Issuers, redemption, peg-stability.",
+      "order": 4
+    },
+    {
+      "id": "nft",
+      "title": "NFT",
+      "description": "Marketplaces, compressed NFT, launchpads.",
+      "order": 5
+    },
+    {
+      "id": "infra",
+      "title": "Infra & Builtins",
+      "description": "SPL Token, Token-2022, Address Lookup Tables, Memo.",
+      "order": 6
+    }
+  ],
+  "packages": [
+    {
+      "id": "kamino-lend-main",
+      "categoryId": "lending",
+      "title": "Kamino Lend — Main Market",
+      "description": "Live snapshot of Kamino's main market: reserves, oracles, and obligation accounts cloned from mainnet. Open positions or simulate liquidations against real state.",
+      "thumbnail": "https://r2.reley.xyz/community/thumbs/kamino-lend.png",
+      "zipUrl": "https://r2.reley.xyz/community/packages/kamino-lend-main.reley.zip",
+      "author": "nhannt",
+      "size": 6291456,
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "programIds": ["KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD"],
+      "network": "mainnet-beta",
+      "tags": ["anchor", "lending", "money-market", "kamino"],
+      "createdAt": "2026-06-27"
+    },
+    {
+      "id": "meteora-damm-v2",
+      "categoryId": "dex",
+      "title": "Meteora DAMM v2 — SOL/USDC pool",
+      "description": "Meteora Dynamic AMM v2 (CP-AMM) pool cloned with vault, token accounts, and config. Minimum surface to run a full swap end-to-end.",
+      "thumbnail": "https://r2.reley.xyz/community/thumbs/meteora-damm-v2.png",
+      "zipUrl": "https://r2.reley.xyz/community/packages/meteora-damm-v2.reley.zip",
+      "author": "nhannt",
+      "size": 4194304,
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "programIds": ["cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG"],
+      "network": "mainnet-beta",
+      "tags": ["anchor", "dex", "amm", "meteora", "damm"],
+      "createdAt": "2026-06-27"
+    },
+    {
+      "id": "circle-usdc-mint",
+      "categoryId": "stablecoin",
+      "title": "Circle USDC — mint snapshot",
+      "description": "USDC SPL Token mint with current supply + authorities. SPL Token program pre-loaded. Mint to a sandbox wallet, freeze/thaw, or test integrations without touching mainnet.",
+      "thumbnail": "https://r2.reley.xyz/community/thumbs/circle-usdc.png",
+      "zipUrl": "https://r2.reley.xyz/community/packages/circle-usdc.reley.zip",
+      "author": "nhannt",
+      "size": 524288,
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "programIds": ["TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"],
+      "network": "mainnet-beta",
+      "tags": ["spl-token", "stablecoin", "usdc", "circle"],
+      "createdAt": "2026-06-27"
+    },
+    {
+      "id": "metaplex-token-metadata",
+      "categoryId": "nft",
+      "title": "Metaplex Token Metadata — sample mint",
+      "description": "Metaplex Token Metadata program with a sample NFT mint, master edition, and metadata account. Mint, transfer, or test royalty enforcement locally.",
+      "thumbnail": "https://r2.reley.xyz/community/thumbs/metaplex-nft.png",
+      "zipUrl": "https://r2.reley.xyz/community/packages/metaplex-token-metadata.reley.zip",
+      "author": "nhannt",
+      "size": 3145728,
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "programIds": ["metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"],
+      "network": "mainnet-beta",
+      "tags": ["nft", "metaplex", "metadata"],
+      "createdAt": "2026-06-27"
+    }
+  ]
+}
